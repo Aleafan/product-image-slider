@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="./styles/normalize.css" rel="stylesheet">
+    <link href="./styles/styles.css" rel="stylesheet">
+
+    <title>Image slider</title>
+
+    <script src="script.js" defer></script>
+
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h2>Хиты продаж</h2>
+        <img src='./images/icon-arrow-right.svg' alt='arrow-right'>
+        
+        <div class='btns-control'>
+          <button id='btn-previous' class='btn-left' type='button'>
+            <img src='./images/sld-arrow.svg' alt='arrow-right'>
+          </button>
+          <button id='btn-next' class='btn-right' type='button'>
+            <img src='./images/sld-arrow.svg' alt='arrow-right'>
+          </button>
+        </div>
+      </header>
+
+      <section class='slider-frame'>
+        <div class='slider' id='slider'>
+          <template id='card-set-template'>
+            <div class='product-card'>
+              <div class='pic-container'>
+                <div class='badge-container text-h6'>
+                  <p class='badge new'>Новинка</p>
+                  <p class='badge hit'>Хит продаж</p>
+                </div>
+                <img class='product-pic' src='./images/conditioner-1.png' alt='product-picture'>
+              </div>
+
+              <div class='product-info'>
+                <p class='text-body2'>Удаленное управление</p>
+                <p class='product-name'>Кондиционер №1</p>
+                <p class='rating-container'>
+                  <img src='./images/star-1.svg' alt='star-picture'><span class='rating text-h6'>4.5</span>
+                </p>
+                <p class='price'>
+                  <span class='new-price'>57 990 руб.</span><span class='old-price'>66 000 руб.</span>
+                </p>
+              </div>
+
+              <div class='btns-container'>
+                <button class='btn-cart' type='button'>В корзину</button>
+                <button class='btn-icon bookmark' type='button'>
+                  <img src='./images/icon-like.svg' alt='bookmark-icon'>
+                </button>
+                <button class='btn-icon comparison' type='button'>
+                  <img src='./images/icon-comparison.svg' alt='comparison-icon'>
+                </button>
+              </div>
+            </div>
+
+            <div class='product-card'>
+              <div class='pic-container'>
+                <div class='badge-container text-h6'>
+                  <p class='badge new'>Новинка</p>
+                  <p class='badge hit'>Хит продаж</p>
+                </div>
+                <img class='product-pic' src='./images/conditioner-2.png' alt='product-picture'>
+              </div>
+
+              <div class='product-info'>
+                <p class='text-body2'>Удаленное управление</p>
+                <p class='product-name'>Кондиционер №2</p>
+                <p class='rating-container'>
+                  <img src='./images/star-1.svg' alt='star-picture'><span class='rating text-h6'>4.5</span>
+                </p>
+                <p class='price'>
+                  <span class='new-price'>57 990 руб.</span><span class='old-price'>66 000 руб.</span>
+                </p>
+              </div>
+
+              <div class='btns-container'>
+                <button class='btn-cart' type='button'>В корзину</button>
+                <button class='btn-icon bookmark' type='button'>
+                  <img src='./images/icon-like.svg' alt='bookmark-icon'>
+                </button>
+                <button class='btn-icon comparison' type='button'>
+                  <img src='./images/icon-comparison.svg' alt='comparison-icon'>
+                </button>
+              </div>
+            </div>
+
+            <div class='product-card'>
+              <div class='pic-container'>
+                <div class='badge-container text-h6'>
+                  <p class='badge new'>Новинка</p>
+                  <p class='badge hit'>Хит продаж</p>
+                </div>
+                <img class='product-pic' src='./images/conditioner-3.png' alt='product-picture'>
+              </div>
+
+              <div class='product-info'>
+                <p class='text-body2'>Удаленное управление</p>
+                <p class='product-name'>Кондиционер №3</p>
+                <p class='rating-container'>
+                  <img src='./images/star-1.svg' alt='star-picture'><span class='rating text-h6'>4.5</span>
+                </p>
+                <p class='price'>
+                  <span class='new-price'>57 990 руб.</span><span class='old-price'>66 000 руб.</span>
+                </p>
+              </div>
+
+              <div class='btns-container'>
+                <button class='btn-cart' type='button'>В корзину</button>
+                <button class='btn-icon bookmark' type='button'>
+                  <img src='./images/icon-like.svg' alt='bookmark-icon'>
+                </button>
+                <button class='btn-icon comparison' type='button'>
+                  <img src='./images/icon-comparison.svg' alt='comparison-icon'>
+                </button>
+              </div>
+            </div>
+
+            <div class='product-card'>
+              <div class='pic-container'>
+                <div class='badge-container text-h6'>
+                  <p class='badge new'>Новинка</p>
+                  <p class='badge hit'>Хит продаж</p>
+                </div>
+                <img class='product-pic' src='./images/conditioner-4.png' alt='product-picture'>
+              </div>
+
+              <div class='product-info'>
+                <p class='text-body2'>Удаленное управление</p>
+                <p class='product-name'>Кондиционер №4</p>
+                <p class='rating-container'>
+                  <img src='./images/star-1.svg' alt='star-picture'><span class='rating text-h6'>4.5</span>
+                </p>
+                <p class='price'>
+                  <span class='new-price'>36 000 руб.</span><span class='old-price'>66 000 руб.</span>
+                </p>
+              </div>
+
+              <div class='btns-container'>
+                <button class='btn-cart' type='button'>В корзину</button>
+                <button class='btn-icon bookmark' type='button'>
+                  <img src='./images/icon-like.svg' alt='bookmark-icon'>
+                </button>
+                <button class='btn-icon comparison' type='button'>
+                  <img src='./images/icon-comparison.svg' alt='comparison-icon'>
+                </button>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
